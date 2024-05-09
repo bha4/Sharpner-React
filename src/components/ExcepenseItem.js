@@ -1,14 +1,22 @@
 import React from 'react';
-function ExpenseItem(){
+import "./ExpenseItem.css";
 
-    return (
-        <>
-           <div>15 August 2023</div>
-           <h2>Book</h2>
-           <div>$10</div>
-           <div>Delhi</div>
-        </>
-      )
-      }
+function ExpenseItem() {
+  const expenseDate = new Date(2023, 7, 15).toISOString();
+  const expenseTitle = "Insurance";
+  const expenseAmount = 50;
+  const location ="Bangalore"
+
+  return (
+    <div className="expense-item">
+      <div>{expenseDate}</div>
+      <div className="expense-item__location">{location}</div>
+      <div className="expense-item__description">
+        <h2>{expenseTitle}</h2>
+        <div className="expense-item__price">${expenseAmount}</div>
+      </div>
+    </div>
+  );
+}
 
 export default ExpenseItem;
