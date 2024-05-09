@@ -1,14 +1,14 @@
 import React from 'react';
 function ExpenseItem(){
-return (
-    <div>
-        <p>This is expense item!</p>
-        <p>Food - $5</p>
-        <p>Petrol - $20</p>
-        <p>Movie - $10</p>
 
-    </div>
-)
-}
+    return (
+        <>
+           <div>15 August 2023</div>
+           <h2>Book</h2>
+           <div>$10</div>
+           <div>Delhi</div>
+        </>
+      )
+      }
 
 export default ExpenseItem;
