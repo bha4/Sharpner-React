@@ -1,5 +1,6 @@
 import "./Expenses.css"
 import ExpenseItem from "./ExpenseItem";
+import Card from "./Card";
  const expenses = [
     { id: "1", date: new Date(2023, 7, 15), title: "Insurance", price: 100 },
     { id: "2", date: new Date(2023, 3, 25), title: "Book", price: 10 },
@@ -9,7 +10,7 @@ import ExpenseItem from "./ExpenseItem";
 
 function Expenses(){
  return (
-    <div>
+    <Card>
       {expenses.map((expense, index) => {
         return (
           <ExpenseItem
@@ -20,7 +21,7 @@ function Expenses(){
           />
         );
       })}
-    </div>
+    </Card>
   );
 }
 export default Expenses;
